@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Movie</string>
+    <string name="nav_header_title">Movie</string>
+    <string name="nav_header_subtitle">By Mahesa Iqbal Ridwansyah</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_popular_movie">Popular Movie</string>
+    <string name="menu_favorite_movie">Favorite Movie</string>
+
+    <string name="popular_movie">Popular Movie</string>
+    <string name="favorite_movie">Favorite Movie</string>
+    <string name="image">Image</string>
+    <string name="sample_of_subtitle_text">Sample of subtitle text</string>
+    <string name="favorite">Favorite</string>
+</resources>
