@@ -21,4 +21,8 @@ dependencies {
     implementation "org.koin:koin-core:$koin_version"
     implementation "org.koin:koin-android:$koin_version"
     implementation "org.koin:koin-android-viewmodel:$koin_version"
+
+    testImplementation "org.mockito:mockito-core:$mockito_version"
+    testImplementation "org.mockito:mockito-inline:$mockito_version"
+    testImplementation "androidx.arch.core:core-testing:$arch_testing"
 }
