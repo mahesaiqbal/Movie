@@ -25,4 +25,6 @@ dependencies {
     testImplementation "org.mockito:mockito-core:$mockito_version"
     testImplementation "org.mockito:mockito-inline:$mockito_version"
     testImplementation "androidx.arch.core:core-testing:$arch_testing"
+
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:$leak_canary_version"
 }
