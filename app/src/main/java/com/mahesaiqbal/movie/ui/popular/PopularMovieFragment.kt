@@ -24,7 +24,7 @@ class PopularMovieFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentPopularMovieBinding.inflate(inflater, container, false)
         return binding.root
     }

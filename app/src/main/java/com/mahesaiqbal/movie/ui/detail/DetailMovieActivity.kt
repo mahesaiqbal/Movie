@@ -2,7 +2,6 @@ package com.mahesaiqbal.movie.ui.detail
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.core.content.ContextCompat
 import com.bumptech.glide.Glide
 import com.mahesaiqbal.movie.R

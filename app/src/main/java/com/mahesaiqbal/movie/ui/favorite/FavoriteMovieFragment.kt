@@ -22,7 +22,7 @@ class FavoriteMovieFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentFavoriteMovieBinding.inflate(inflater, container, false)
         return binding.root
     }

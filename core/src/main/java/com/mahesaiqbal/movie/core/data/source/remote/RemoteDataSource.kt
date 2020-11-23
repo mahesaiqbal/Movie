@@ -1,6 +1,5 @@
 package com.mahesaiqbal.movie.core.data.source.remote
 
-import android.util.Log
 import com.mahesaiqbal.movie.core.BuildConfig
 import com.mahesaiqbal.movie.core.data.source.remote.network.ApiResponse
 import com.mahesaiqbal.movie.core.data.source.remote.network.ApiService
