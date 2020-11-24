@@ -31,11 +31,11 @@ object DataMapper {
         input.map {
             Movie(
                 id = it.id,
-                backdropPath = it.backdropPath,
+                backdropPath = it.backdropPath.toString(),
                 originalLanguage = it.originalLanguage,
                 overview = it.overview,
                 popularity = it.popularity,
-                posterPath = it.posterPath,
+                posterPath = it.posterPath.toString(),
                 releaseDate = it.releaseDate,
                 title = it.title,
                 voteAverage = it.voteAverage,
@@ -43,21 +43,6 @@ object DataMapper {
                 isFavorite = it.isFavorite
             )
         }
-
-//    fun mapEntityToDomain(input: PopularMovieEntity): Movie =
-//        Movie(
-//            id = input.id,
-//            backdropPath = input.backdropPath,
-//            originalLanguage = input.originalLanguage,
-//            overview = input.overview,
-//            popularity = input.popularity,
-//            posterPath = input.posterPath,
-//            releaseDate = input.releaseDate,
-//            title = input.title,
-//            voteAverage = input.voteAverage,
-//            voteCount = input.voteCount,
-//            isFavorite = input.isFavorite
-//        )
 
     fun mapDomainToEntity(input: Movie) = PopularMovieEntity(
         id = input.id,

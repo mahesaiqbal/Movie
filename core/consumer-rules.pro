@@ -85,3 +85,30 @@
 ##---------------Begin: proguard configuration for RxJava  ----------
 # Uncomment if you use RxJava
 #-dontwarn java.util.concurrent.Flow*
+
+
+##---------------Begin: proguard configuration for Okio (OkHttp)  ----------
+# JSR 305 annotations are for embedding nullability information.
+-dontwarn javax.annotation.**
+
+# A resource is loaded with a relative path so the package of this class must be preserved.
+-keepnames class okhttp3.internal.publicsuffix.PublicSuffixDatabase
+
+# Animal Sniffer compileOnly dependency to ensure APIs are compatible with older versions of Java.
+-dontwarn org.codehaus.mojo.animal_sniffer.*
+
+# OkHttp platform used only on JVM and when Conscrypt dependency is available.
+-dontwarn okhttp3.internal.platform.ConscryptPlatform
+-dontwarn org.conscrypt.ConscryptHostnameVerifier
+
+
+##---------------Begin: proguard configuration for Lottie Android  ----------
+-dontwarn com.airbnb.lottie.**
+-keep class com.airbnb.lottie.** {*;}
+
+
+##---------------Begin: proguard configuration for Koin  ----------
+-keepnames class android.arch.lifecycle.ViewModel
+-keepclassmembers public class * extends android.arch.lifecycle.ViewModel { public <init>(...); }
+-keepclassmembers class com.lebao.app.domain.** { public <init>(...); }
+-keepclassmembers class * { public <init>(...); }

@@ -11,10 +11,4 @@
         android:label="@string/menu_popular_movie"
         tools:layout="@layout/fragment_popular_movie" />
 
-    <fragment
-        android:id="@+id/nav_favorite_movie"
-        android:name="com.mahesaiqbal.movie.ui.favorite.FavoriteMovieFragment"
-        android:label="@string/menu_favorite_movie"
-        tools:layout="@layout/fragment_favorite_movie" />
-
 </navigation>

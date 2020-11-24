@@ -19,3 +19,15 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+
+##---------------Begin: proguard configuration for Lottie Android  ----------
+-dontwarn com.airbnb.lottie.**
+-keep class com.airbnb.lottie.** {*;}
+
+
+##---------------Begin: proguard configuration for Koin  ----------
+-keepnames class android.arch.lifecycle.ViewModel
+-keepclassmembers public class * extends android.arch.lifecycle.ViewModel { public <init>(...); }
+-keepclassmembers class com.lebao.app.domain.** { public <init>(...); }
+-keepclassmembers class * { public <init>(...); }

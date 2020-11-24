@@ -2,6 +2,7 @@ package com.mahesaiqbal.movie.favorite.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import com.mahesaiqbal.movie.core.ui.MovieAdapter
@@ -36,6 +37,7 @@ class FavoriteActivity : AppCompatActivity() {
 
         viewModel.favoritePopularMovies.observe(this, { movie ->
             movieAdapter.setData(movie)
+            binding.rlViewEmpty.visibility = if (movie.isNotEmpty()) View.GONE else View.VISIBLE
         })
 
         with(binding.rvFavoriteMovie) {
